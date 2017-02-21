@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="favicon.jpg">
+	<title>Pizza Project</title>
+</head>
+<body>
+<div class="container-fluid backGroundImg">
+<header>
+	<div> 
+		<h1 class="title">Jason's Pizza!</h1>
+	</div>		
+</header>
+<div class="container info">
+	<form id="pizzaMenu">
+		<div class="menu col-md-4 col-sm-5 col-sm-offset-1 col-md-offset-0">
+			<h4>Pizza Size</h4>
+			<input class="size" type="radio" name="size" value="Personal Pizza"> Personal Pizza </br>
+			<input class="size" type="radio" name="size" value="Medium Pizza"> Medium Pizza </br>
+			<input class="size" type="radio" name="size" value="Large Pizza" checked="checked" > Large Pizza </br>
+			<input class="size" type="radio" name="size" value="Extra Large Pizza"> Extra Large Pizza </br>
+		</div>
+		<div class="menu col-md-4 col-sm-5">
+			<h4>Meat Toppings</h4>
+			<input class="meats" type="checkbox" name="meats" value="Pepperoni">Pepperoni</br>
+			<input class="meats" type="checkbox" name="meats" value="Sausage">Sausage</br>
+			<input class="meats" type="checkbox" name="meats" value="Canadian Bacon">Canadian Bacon</br>
+			<input class="meats" type="checkbox" name="meats" value="Ground Beef">Ground Beef</br>
+			<input class="meats" type="checkbox" name="meats" value="Anchovies">Anchovies</br>
+			<input class="meats" type="checkbox" name="meats" value="Chicken">Chicken</br>
+		</div>
+		<div class="menu col-md-4 col-sm-5 col-sm-offset-1 col-md-offset-0">
+			<h4>Pizza Cheese</h4>
+			<input class="cheese" type="radio" name="cheese" value="No Cheese">No Cheese</br>
+			<input class="cheese" type="radio" name="cheese" value="Regular Cheese" checked="checked" >Regular Cheese</br>
+			<input class="cheese" type="radio" name="cheese" value="Extra Cheese">Extra Cheese</br>
+		</div>
+
+		<div class="clearfix visible-md-block visible-lg-block"></div>
+		<div class="menu col-md-4 col-sm-5">
+			<h4>Pizza Crust</h4>
+			<input class="crust" type="radio" name="crust" value="Plain Crust" checked="checked" >Plain Crust</br>
+			<input class="crust" type="radio" name="crust" value="Garlic Buttery Crust">Garlic Buttery Crust</br>
+			<input class="crust" type="radio" name="crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust</br>
+			<input class="crust" type="radio" name="crust" value="Spicy Crust">Spicy Crust</br>
+			<input class="crust" type="radio" name="crust" value="House Special Crust">House Special Crust</br>
+		</div>
+		<div class="menu col-md-4 col-sm-5 col-sm-offset-1 col-md-offset-0">
+			<h4>Pizza Sauce</h4>
+			<input class="sauce" type="radio" name="sauce" value="No Sauce">No Sauce</br>
+			<input class="sauce" type="radio" name="sauce" value="Marinara Sauce" checked="checked" >Marinara Sauce</br>
+			<input class="sauce" type="radio" name="sauce" value="White Sauce">White Sauce</br>
+			<input class="sauce" type="radio" name="sauce" value="Barbeque Sauce">Barbeque Sauce</br>
+		</div>
+		<div class="menu col-md-4 col-sm-5">
+			<h4>Veggie Toppings</h4>
+			<input class="veg" type="checkbox" name="veggies" value="Tomatoes">Tomatoes</br>
+			<input class="veg" type="checkbox" name="veggies" value="Onions">Onions</br>
+			<input class="veg" type="checkbox" name="veggies" value="Olives">Olives</br>
+			<input class="veg" type="checkbox" name="veggies" value="Green Peppers">Green Peppers</br>
+			<input class="veg" type="checkbox" name="veggies" value="Mushrooms">Mushrooms</br>
+			<input class="veg" type="checkbox" name="veggies" value="Pineapple">Pineapple</br>
+			<input class="veg" type="checkbox" name="veggies" value="Spinach">Spinach</br>
+			<input class="veg" type="checkbox" name="veggies" value="Jalepeno">Jalepeno</br>
+		</div>
+		<div class="clearfix visible-sm-block"></div>
+	</form>
+	<br><br>
+	<div>
+	<div class="button frmbtn col-md-5 col-md-offset-1" onclick="submitOrder()"><h5>Place Order</h5> </div>
+	<div class="button frmbtn col-md-5" onclick="cancelOrder()"><h5>Cancel Order</h5></div>
+	</div>
+</div>
+
+<br>	
+<br>
+<div class="container">
+	<div class = "return col-xs-8 col-xs-offset-2">
+		<div id ="items" class="display col-xs-6">
+			
+		</div>
+		<div id ="prices" class="display col-xs-6">
+			
+		</div>
+		<div id ="total" class="final bottom col-xs-12">
+			
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
